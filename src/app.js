@@ -23,15 +23,7 @@ import subjectClassRoutes from "./routes/subject_class.routes.js";
 dotenv.config();
 const app = express();
 app.use(express.json());
-if (process.env.DEV_MODE) {
-  app.use(cors());
-} else {
-  app.use(
-    cors({
-      origin: process.env.DOMAIN_ALLOWED.split(","),
-    })
-  );
-}
+app.use(cors());
 const port = process.env.PORT || 3000;
 
 const API_PREFIX = "/api";
