@@ -23,7 +23,6 @@ import subjectClassRoutes from "./routes/subject_class.routes.js";
 dotenv.config();
 const app = express();
 app.use(cors());
-app.options("*", cors());
 app.use(express.json());
 
 const port = process.env.PORT || 3000;
