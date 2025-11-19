@@ -4,6 +4,9 @@
   "type": "module",
   "description": "ĐỀ TÀI: Xây dựng Website quản lý sinh viên trường Đại học Công nghệ Đông Á",
   "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
